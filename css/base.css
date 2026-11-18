@@ -1,0 +1,23 @@
+/* Base: theme, typography, buttons, boxes, party screen, global touch rules */
+:root{--red:#d8372c;--ink:#1c2233;--pap:#f7f3e3;--bl:#2b5fc4;--ye:#ffcb05}
+*{box-sizing:border-box}
+body{margin:0;background:#1c2233 radial-gradient(circle at 50% -20%,#34406a,#1c2233 70%);color:var(--pap);font:14px/1.4 "Trebuchet MS",Verdana,sans-serif;min-height:100vh}
+main{max-width:900px;margin:0 auto;padding:12px}
+.px{font-family:"Press Start 2P","Courier New",monospace}
+h1{font:22px/1.5 "Press Start 2P","Courier New",monospace;color:var(--ye);text-shadow:3px 3px 0 var(--bl),5px 5px 0 #000;margin:14px 0;text-align:center}
+button{font:700 14px "Trebuchet MS",sans-serif;color:var(--ink);background:var(--pap);border:3px solid var(--ink);border-radius:10px;padding:8px 12px;cursor:pointer;box-shadow:0 3px 0 #0006}
+button:hover:not(:disabled){background:#fff;transform:translateY(-1px)}button:disabled{opacity:.4;cursor:default}
+button:focus-visible{outline:3px solid var(--ye)}
+.go{background:var(--red);color:#fff;font-size:16px}
+.box{background:var(--pap);color:var(--ink);border:4px solid var(--ink);border-radius:12px;padding:10px;box-shadow:0 0 0 3px var(--pap),0 0 0 6px var(--ink)}
+.tp{display:inline-block;font-size:10px;font-weight:700;color:#fff;padding:1px 7px;border-radius:9px;margin:0 3px 2px 0;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin:14px 0}
+.card{cursor:pointer;text-align:center;font-size:12px}.card.sel{outline:5px solid var(--red)}.card.dead{opacity:.4}
+.card img{width:96px;height:96px;object-fit:contain;image-rendering:pixelated}
+.card small{display:block;color:#555}
+.top{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+html{-webkit-text-size-adjust:100%}*{-webkit-tap-highlight-color:transparent}
+body{overflow-x:hidden}
+main{padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right));padding-bottom:max(12px,env(safe-area-inset-bottom));-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+button{touch-action:manipulation}
+.stk{position:sticky;bottom:8px;z-index:5;margin:8px 0}.stk button{width:100%;padding:12px}
