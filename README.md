@@ -4,9 +4,8 @@ A browser based Pokémon roguelike featuring fast paced **Double Battles**, rand
 Random team, adapt your strategy, defeat your opponents, and see how many rounds you can survive!
 
 <p align="center">
-  <a href="https://isthisalif.github.io/Poke-Doublerush/"
-     style="font-size: 24px; font-weight: bold;">
-    🎮 PLAY POKE DOUBLERUSH
+  <a href="https://isthisalif.github.io/Poke-Doublerush/">
+    <strong>PLAY POKE DOUBLERUSH</strong>
   </a>
 </p>
 
