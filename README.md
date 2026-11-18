@@ -1,7 +1,7 @@
 # Poke Doublerush
 
 A roguelike double-battle Pokémon game that runs in the browser. Build with PokeAPI.
-"https://isthisalif.github.io/Poke-Doublerush/"
+Try me = "https://isthisalif.github.io/Poke-Doublerush/"
 
 ## Files
 - `index.html`: page shell and script/style loading order
