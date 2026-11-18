@@ -1,6 +1,6 @@
 /* Battle screen: start, scene drawing, command menus */
 async function startB(){
- loading(`Round ${G.round}: a challenger appears…`);
+ loading(`Round ${G.round}: A challenger appears…`);
  let foes;try{foes=await loadParty(6,1+.05*(G.round-1),G.seen)}catch(e){return el.innerHTML=`<div class="box">Network error. <button onclick="startB()">Retry</button></div>`}
  G.party.forEach(reset);
  const me=G.sel.map(i=>G.party[i]),ft=foes.sort(()=>Math.random()-.5).slice(0,4),r=G.round;
