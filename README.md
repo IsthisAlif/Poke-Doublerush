@@ -9,8 +9,6 @@ Random team, adapt your strategy, defeat your opponents, and see how many rounds
   </a>
 </p>
 
----
-
 ## About the Game
 
 Poke Doublerush is a Pokémon inspired roguelike game built with HTML, CSS, and JavaScript. It combines traditional Pokémon battle mechanics with a round based progression system.
