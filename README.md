@@ -1,26 +1,26 @@
 # ⚡ Poke Doublerush
 
-A browser-based Pokémon roguelike featuring fast-paced **Double Battles**, randomly generated teams, and iconic Pokémon battle gimmicks.
+A browser based Pokémon roguelike featuring fast paced **Double Battles**, randomly generated teams, and iconic Pokémon battle gimmicks.
 
-Build your team, adapt your strategy, defeat your opponents, and see how many rounds you can survive!
+Random team, adapt your strategy, defeat your opponents, and see how many rounds you can survive!
 
 <p align="center">
   <a href="https://isthisalif.github.io/Poke-Doublerush/">
-    <strong>🎮 PLAY POKE DOUBLERUSH</strong>
+    <strong>PLAY POKE DOUBLERUSH</strong>
   </a>
 </p>
 
 ---
 
-## 🎮 About the Game
+## About the Game
 
-Poke Doublerush is a Pokémon-inspired roguelike game built with HTML, CSS, and JavaScript. It combines traditional Pokémon battle mechanics with a round-based progression system.
+Poke Doublerush is a Pokémon inspired roguelike game built with HTML, CSS, and JavaScript. It combines traditional Pokémon battle mechanics with a round based progression system.
 
 Every run offers a different experience. Pokémon, movesets, abilities, and held items are randomly generated, requiring players to adapt their strategies and make the best use of their available team.
 
-**The objective is simple: build your team, defeat your opponents, and survive as many rounds as possible!**
+**The objective is simple: Learn your team, defeat your opponents, and survive as many rounds as possible!**
 
-## ✨ Features
+## Features
 
 - **Random Pokémon Generation** – Encounter randomly generated Pokémon using data from PokéAPI.
 - **Team Selection** – Receive 6 Pokémon and select 4 to form your battle team.
@@ -28,16 +28,13 @@ Every run offers a different experience. Pokémon, movesets, abilities, and held
 - **Random Movesets** – Pokémon receive randomly generated movesets.
 - **Random Abilities** – Each Pokémon receives a randomly assigned ability.
 - **Held Items** – Pokémon can receive different held items to influence battle strategies.
-- **Battle Gimmicks** – Includes Mega Evolution, Z-Moves, Dynamax, Gigantamax, and Terastallization.
-- **Battle Mechanics** – Type effectiveness, STAB, critical hits, status conditions, stat changes, weather effects, and switching.
-- **Progressive Difficulty** – Opponents become stronger as you advance through the rounds.
+- **Battle Gimmicks** – Includes Mega Evolution, Z-Moves, Dynamax, Gigantamax, and Terastallization..
 - **Score System** – Earn points by successfully completing rounds.
 - **Best Score Tracking** – Keep track of your personal best score.
-- **Battle Animations** – Visual effects for attacks, damage, switching, and other battle events.
 - **Interactive Tooltips** – Hover over Pokémon and moves on desktop, or interact with them on mobile.
 - **Responsive Design** – Play on desktop and mobile browsers.
 
-## 🕹️ How to Play
+## How to Play
 
 1. Open the game using the link above.
 2. Select **Start Run** to begin.
@@ -50,11 +47,12 @@ Every run offers a different experience. Pokémon, movesets, abilities, and held
 
 **Your goal:** Survive as many rounds as possible!
 
-## ⚔️ Battle System
+## Battle System
 
 Poke Doublerush uses the Double Battle format.
 
-- Each team consists of 4 Pokémon.
+- Each team consists of 6 Pokémon.
+- Choose 4 out of 6 pokemon to be used during battle.
 - 2 Pokémon are active on the battlefield at a time.
 - The remaining Pokémon stay on the bench and can be switched in.
 - Each active Pokémon can perform an action during a turn.
@@ -81,7 +79,7 @@ Poke Doublerush uses the Double Battle format.
 | PokéAPI | Pokémon data, moves, abilities, stats, and forms |
 | GitHub Pages | Website hosting and deployment |
 
-## 🌐 API Integration
+## API Integration
 
 This project uses [PokéAPI](https://pokeapi.co/) to retrieve Pokémon information dynamically.
 
@@ -95,7 +93,7 @@ The API provides data including:
 
 An active internet connection is required to retrieve Pokémon data and external assets.
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 Poke-Doublerush/
@@ -131,7 +129,7 @@ Poke-Doublerush/
 | `tooltip.js` | Hover and touch tooltips for Pokémon and moves. |
 | `main.js` | Game initialization, quit button, and game start functionality. |
 
-## 💻 Running Locally
+## Running Locally
 
 You can run the game directly from your computer without installing additional dependencies.
 
@@ -157,39 +155,27 @@ Alternatively, use Visual Studio Code with the Live Server extension.
 
 An internet connection is required for PokéAPI requests and external Pokémon assets.
 
-## 🚀 Deployment
+## Deployment
 
 The game is hosted using **GitHub Pages**.
 
 - **Live Demo:** https://isthisalif.github.io/Poke-Doublerush/
 - **Source Code:** https://github.com/IsthisAlif/Poke-Doublerush
-
-To deploy your own version:
-
-1. Fork or clone this repository.
-2. Push your changes to GitHub.
-3. Navigate to **Settings → Pages**.
-4. Select the `main` branch and `/ (root)` folder.
-5. Save and wait for GitHub Pages to publish your website.
-
-## 🔮 Future Improvements
+## Future Improvements
 
 Some potential improvements for future development:
 
-- Additional Pokémon and battle mechanics.
-- More abilities and held item interactions.
 - Improved opponent AI and difficulty balancing.
 - Additional battle animations and visual effects.
-- More team-building and strategic options.
-- Further improvements to the mobile interface.
+- Further improvements to the features and quality of life.
 
-## 🙌 Credits
+## Credits
 
 - [PokéAPI](https://pokeapi.co/) – Pokémon data and API.
 - [Pokémon](https://www.pokemon.com/) – Original Pokémon franchise and intellectual property.
 - [GitHub Pages](https://pages.github.com/) – Website hosting.
 
-## 📜 Disclaimer
+## Disclaimer
 
 Poke Doublerush is a fan-made, non-commercial project created for educational and entertainment purposes.
 
