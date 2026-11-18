@@ -1,4 +1,4 @@
-# ⚡ Poke Doublerush
+# Poke Doublerush
 
 A browser based Pokémon roguelike featuring fast paced **Double Battles**, randomly generated teams, and iconic Pokémon battle gimmicks.
 
