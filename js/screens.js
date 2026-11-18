@@ -1,6 +1,6 @@
 /* Title, party roll, party selection, victory and game over screens */
 function title(){
- el.innerHTML=`<h1>POKE<br>DOUBLERUSH</h1><div class="box" style="text-align:center"><p>You get six random Pokémon with random movesets and abilities. Each round, pick four and win a double battle against a new opponent party. Your party stays the same all run. How far can you go?</p><p>Best score: <b>${best()}</b></p><p><small>${TOUCH?"Tap a Pokémon to see its stats. Hold a move to read its description.":"Hover over Pokémon and moves to see stats and descriptions."}</small></p><button class="go" onclick="newRun()">Start run</button></div>`;
+ el.innerHTML=`<h1>POKE<br>DOUBLERUSH</h1><div class="box" style="text-align:center"><p>You get six random Pokémon with random movesets and abilities. Each round, pick 4 pokemon out of 6 and win a double battle against youropponent.How far can you go?</p><p>Best score: <b>${best()}</b></p><p><small>${TOUCH?"Tap a Pokémon to see its stats. Hold a move to read its description.":"Hover over Pokémon and moves to see stats and descriptions."}</small></p><button class="go" onclick="newRun()">Start run</button></div>`;
 }
 async function loadParty(n,mult,seen){
  const ids=new Set();while(ids.size<n){const i=1+rnd(1025);if(!seen.has(i))ids.add(i)}
@@ -10,8 +10,8 @@ async function loadParty(n,mult,seen){
 }
 const loading=t=>el.innerHTML=`<h1>…</h1><div class="box" style="text-align:center">${t}</div>`;
 async function newRun(){
- loading("Rolling your party from PokéAPI…");
- try{G={seen:new Set(),round:1,sel:[]};G.party=await loadParty(6,1,G.seen);}catch(e){return el.innerHTML=`<div class="box">Could not reach PokéAPI. Check your connection and <button onclick="newRun()">retry</button></div>`}
+ loading("Catching your pokemon...");
+ try{G={seen:new Set(),round:1,sel:[]};G.party=await loadParty(6,1,G.seen);}catch(e){return el.innerHTML=`<div class="box">Failed to catch pokemon. Check your connection and <button onclick="newRun()">retry</button></div>`}
  pickScr();
 }
 function pickScr(){
