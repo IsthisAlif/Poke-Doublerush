@@ -1,7 +1,6 @@
 # Poke Doublerush
 
 A browser based Pokémon roguelike featuring fast paced **Double Battles**, randomly generated teams, and iconic Pokémon battle gimmicks.
-
 Random team, adapt your strategy, defeat your opponents, and see how many rounds you can survive!
 
 <p align="center">
