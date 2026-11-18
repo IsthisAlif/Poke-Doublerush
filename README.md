@@ -3,16 +3,17 @@
 A browser based Pokémon roguelike featuring fast paced **Double Battles**, randomly generated teams, and iconic Pokémon battle gimmicks.
 Random team, adapt your strategy, defeat your opponents, and see how many rounds you can survive!
 
+<h2 align="center">
+  <a href="https://isthisalif.github.io/Poke-Doublerush/">
+    <strong>PLAY POKE DOUBLERUSH</strong>
+  </a>
+</h2>
+
 <p align="center">   
   <img src="screenshot/Team Selection.png" width="90%" alt="Poke Doublerush Team Selection Screen"> 
 </p>
 <p align="center">
   <img src="screenshot/Battle.png" width="90%" alt="Poke Doublerush Battle Screen">
-</p>
-<p align="center">
-  <a href="https://isthisalif.github.io/Poke-Doublerush/">
-    <strong>PLAY POKE DOUBLERUSH</strong>
-  </a>
 </p>
 
 ## About the Game
