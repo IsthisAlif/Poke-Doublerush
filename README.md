@@ -73,7 +73,7 @@ Poke Doublerush uses the Double Battle format.
 | Gigantamax | Access special Gigantamax forms and attacks for eligible Pokémon. |
 | Terastallization | Change a Pokémon's type to its Tera Type. |
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 | Technology | Purpose |
 |---|---|
