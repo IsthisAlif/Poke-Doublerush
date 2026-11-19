@@ -29,3 +29,19 @@
 .mvb{min-width:130px;color:#fff;text-shadow:1px 1px 0 #0008;text-align:left}
 #lg{-webkit-user-select:text;user-select:text}
 #cm>span{flex:1 1 130px;display:flex}.mvb{width:100%}
+
+/* substitute doll, weather overlays, effects layer */
+.doll{display:flex;align-items:center;justify-content:center;font-size:58px;z-index:3}
+.doll.in{animation:dollin .5s ease-out}.doll.hit{animation:hit .55s linear}.doll.break{animation:dollbreak .7s ease-in forwards}
+@keyframes dollin{0%{opacity:0;transform:translateY(-40px) scale(calc(var(--sx)*.2),calc(var(--sy)*.2)) rotate(-180deg)}100%{opacity:1;transform:scale(var(--sx),var(--sy))}}
+@keyframes dollbreak{0%{transform:scale(var(--sx),var(--sy))}30%{transform:translateX(10px) scale(var(--sx),var(--sy)) rotate(12deg)}100%{opacity:0;transform:translateY(40px) scale(calc(var(--sx)*.3),calc(var(--sy)*.3)) rotate(90deg)}}
+.sp.behind{opacity:.4;filter:blur(1px)}
+.wxo{position:absolute;inset:0;pointer-events:none;z-index:1;opacity:.55}
+.wxo.rain{background:repeating-linear-gradient(100deg,transparent 0 10px,#cfe8ff88 10px 11px);background-size:40px 40px;animation:rainfall .5s linear infinite}
+.wxo.snow{background:radial-gradient(#fff 1.5px,transparent 2px) 0 0/28px 28px;animation:snowfall 3s linear infinite}
+.wxo.sand{background:repeating-linear-gradient(170deg,transparent 0 14px,#c9a85a66 14px 16px);background-size:60px 60px;animation:sandblow 1s linear infinite}
+.wxo.sun{background:radial-gradient(circle at 85% 8%,#fff6a0cc,transparent 45%);animation:sunpulse 3s ease-in-out infinite}
+@keyframes rainfall{to{background-position:-12px 40px}}@keyframes snowfall{to{background-position:14px 28px}}
+@keyframes sandblow{to{background-position:-60px 20px}}@keyframes sunpulse{50%{opacity:.9}}
+#fxl{position:fixed;inset:0;pointer-events:none;z-index:45;overflow:hidden}
+.grid.mini{grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}.grid.mini .card{cursor:default;font-size:11px;padding:6px}.grid.mini .card img{width:64px;height:64px}

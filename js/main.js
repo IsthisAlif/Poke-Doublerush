@@ -6,6 +6,6 @@ function quit(){
  if(B)B.dead=true;
  tipK=null;showTip();
  if(G)sv(G.round-1);
- title();
+ showTitle();
 }
-title();
+showTitle();
