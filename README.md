@@ -3,10 +3,17 @@
 A browser based Pokémon roguelike featuring fast paced **Double Battles**, randomly generated teams, and iconic Pokémon battle gimmicks.
 Random team, adapt your strategy, defeat your opponents, and see how many rounds you can survive!
 
-<p align="center">
+<h2 align="center">
   <a href="https://isthisalif.github.io/Poke-Doublerush/">
     <strong>PLAY POKE DOUBLERUSH</strong>
   </a>
+</h2>
+
+<p align="center">   
+  <img src="screenshot/Team Selection.png" width="90%" alt="Poke Doublerush Team Selection Screen"> 
+</p>
+<p align="center">
+  <img src="screenshot/Battle.png" width="90%" alt="Poke Doublerush Battle Screen">
 </p>
 
 ## About the Game
@@ -66,7 +73,7 @@ Poke Doublerush uses the Double Battle format.
 | Gigantamax | Access special Gigantamax forms and attacks for eligible Pokémon. |
 | Terastallization | Change a Pokémon's type to its Tera Type. |
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 | Technology | Purpose |
 |---|---|
