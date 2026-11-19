@@ -97,42 +97,6 @@ The API provides data including:
 
 An active internet connection is required to retrieve Pokémon data and external assets.
 
-## Project Structure
-
-```text
-Poke-Doublerush/
-│
-├── index.html
-│
-├── css/
-│   ├── base.css
-│   ├── battle.css
-│   └── mobile.css
-│
-├── js/
-│   ├── data.js
-│   ├── pokemon.js
-│   ├── screens.js
-│   ├── battle-ui.js
-│   ├── battle-engine.js
-│   ├── tooltip.js
-│   └── main.js
-│
-└── README.md
-```
-
-### JavaScript Files
-
-| File | Description |
-|---|---|
-| `data.js` | Game constants, type chart, helper functions, and saved best score. |
-| `pokemon.js` | Builds Pokémon using PokéAPI data, including moves, abilities, items, and forms. |
-| `screens.js` | Title screen, team selection, victory, and game-over screens. |
-| `battle-ui.js` | Battle screen rendering and command menus. |
-| `battle-engine.js` | Turn order, damage calculations, moves, abilities, and battle gimmicks. |
-| `tooltip.js` | Hover and touch tooltips for Pokémon and moves. |
-| `main.js` | Game initialization, quit button, and game start functionality. |
-
 ## Running Locally
 
 You can run the game directly from your computer without installing additional dependencies.
