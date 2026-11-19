@@ -6,7 +6,7 @@ const mvTip=x=>`<b>${x.n}</b> ${tpl([x.ty])}<br>${cap(x.cls)} · Power ${x.pw||"
 function monTip(m){
  const rows=m.s.map((v,i)=>{const g=i?m.sg[i]:0,now=i?Math.floor(S(m,i)):m.hp+"/"+m.mhp,c=i&&now>v?"#1f8f45":i&&now<v?"#c0392b":"inherit";
   return`<tr><td>${SN[i]}</td><td>${i?v:m.mhp}</td><td>${g?(g>0?"+":"")+g:"—"}</td><td style="font-weight:700;color:${c}">${now}</td></tr>`}).join("");
- return`<b>${m.n}</b> Lv50 ${tpl(tys(m))}${m.st?` <b style="color:#c0392b">${m.st.toUpperCase()}</b>`:""}${m.conf?" <b>CONFUSED</b>":""}<br><small>Ability: ${cap(m.ab)} · Item: ${m.item?m.item.n:"none"}</small><table><tr><th></th><th>Stat</th><th>Stage</th><th>Now</th></tr>${rows}</table>`;
+ return`<b>${m.n}</b> ${gs(m)} Lv50 ${tpl(tys(m))}${m.st?` <b style="color:#c0392b">${m.st.toUpperCase()}</b>`:""}${m.conf?" <b>CONFUSED</b>":""}${m.love?" <b>INFATUATED</b>":""}${m.sub?" <b>SUBSTITUTE</b>":""}${m.taunt>0?" <b>TAUNTED</b>":""}<br><small>Ability: ${cap(AB(m)||m.ab)}${AB(m)?"":" (suppressed)"} · Item: ${m.item?m.item.n:"none"}</small><table><tr><th></th><th>Stat</th><th>Stage</th><th>Now</th></tr>${rows}</table>`;
 }
 function tipHTML(k){
  if(!B||!B.me)return"";const a=k.split(":");
